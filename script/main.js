@@ -111,5 +111,10 @@ function nextVideo() {
   getVideo();
 }
 
+document.getElementById('video').addEventListener('ended', myHandler, false);
+function myHandler(e) {
+  nextVideo()
+}
+
 init('deSo', 80);
 init('cauSo', 40);
